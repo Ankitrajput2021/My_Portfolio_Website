@@ -100,16 +100,16 @@
   }
   .project-item .links {
     display: flex;
-    justify-content: space-between; /* Place links on opposite corners */
-    margin-top: 10px; /* Add some space above the links */
+    justify-content: space-between; 
+    margin-top: 10px; 
   }
   
   .project-item .links a {
-    text-decoration: none; /* Remove underline from links */
-    color: #007bff; /* Change link color to blue or your preferred color */
+    text-decoration: none;
+    color: #007bff; 
   }
   
   .project-item .links a:hover {
-    text-decoration: underline; /* Underline on hover for clarity */
+    text-decoration: underline; 
   }
   
