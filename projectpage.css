@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  .projects {
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px #2ca4bf, 0 0 20px #2ca4bf, 0 0 30px #2ca4bf;
+  }
+  
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .project-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(44, 164, 191, 0.5), 0 0 30px rgba(44, 164, 191, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(44, 164, 191, 0.8), 0 0 40px rgba(44, 164, 191, 1);
+  }
+  
+  .project-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px #2ca4bf, 0 0 20px #2ca4bf, 0 0 30px #2ca4bf;
+  }
+  
+  .project-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Button Styling */
+  .button2 {
+    color: white;
+    font-size: 1.2rem;
+    background: transparent;
+    padding: 10px 30px;
+    margin: 20px 0;
+    border: 2px solid #2ca4bf;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  .button2:hover {
+    transform: scale(1.1);
+    border-color: white;
+    box-shadow: 0 0 10px #2ca4bf, 0 0 20px #2ca4bf, 0 0 30px #2ca4bf;
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 768px) {
+    .projects {
+      padding: 20px;
+    }
+  
+    .projects h2 {
+      font-size: 2rem;
+    }
+  
+    .project-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .project-item {
+      padding: 15px;
+    }
+  
+    .project-item h3 {
+      font-size: 1.5rem;
+    }
+  
+    .button2 {
+      font-size: 1rem;
+      padding: 8px 20px;
+    }
+  }
+  .project-item .links {
+    display: flex;
+    justify-content: space-between; /* Place links on opposite corners */
+    margin-top: 10px; /* Add some space above the links */
+  }
+  
+  .project-item .links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Change link color to blue or your preferred color */
+  }
+  
+  .project-item .links a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+  }
+  

@@ -1,0 +1,27 @@
+.connect-section {
+    padding: 50px; /* Add padding around the section */
+    text-align: center; /* Center align the text */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    min-height: 100vh; /* Full height */
+  }
+  
+  .connect-content h5 {
+    font-size: 5em; /* Increase font size for emphasis */
+    margin-bottom: 40px; /* Space below the heading */
+  }
+  
+  .social {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Add space between buttons */
+  }
+  
+  .social-button {
+    font-size: 2em; /* Increase icon size */
+    color: #333; /* Icon color */
+    transition: color 0.3s ease; /* Transition effect on hover */
+  }
+  
+  .social-button:hover {
+    color: #007bff; /* Change color on hover */
+  }
