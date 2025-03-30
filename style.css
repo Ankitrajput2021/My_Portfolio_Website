@@ -252,3 +252,36 @@ h6 {
     transform: translateY(0);
   }
 }
+@keyframes pop {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.button1 {
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #2ca4bf;
+  box-shadow: 0 0 10px #2ca4bf, 0 0 20px #2ca4bf, 0 0 30px #2ca4bf;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.button1:hover {
+  transform: scale(1.1);
+  border-color: white;
+  box-shadow: 0 0 10px #2ca4bf, 0 0 20px #2ca4bf, 0 0 30px #2ca4bf;
+}
+
+/* Add this new style */
+.button1.popped {
+  animation: pop 0.3s ease;
+}
